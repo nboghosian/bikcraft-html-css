@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  background: #f7f7f7;
+  display: grid;
+  justify-items: center;
+}
+
+main {
+  margin-top: 60px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+h1 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  margin-top: 60px;
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
+  gap: 30px;
+}
+.menu a {
+  display: block;
+  background: #ffffff;
+  padding: 1rem 1.75rem;
+  border-radius: 6px;
+  color: #000000;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+}
+.menu a:hover {
+  border: 2px solid #ee2211;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #f7f7f7;
+  max-width: 1000px;
+}
+
+.intro {
+  padding: 40px;
+  text-align: right;
+  position: relative;
+  display: grid;
+  gap: 20px;
+  align-content: center;
+  justify-items: end;
+  background-color: #ffffff;
+}
+.intro a {
+  background: #ee2211;
+  padding: 1rem 1.75rem;
+  border-radius: 6px;
+  color: #ffffff;
+}
+.intro a:hover {
+  background: #900;
+  color: #f7f7f7;
+}
+.intro::before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #e21;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.subtitulo {
+  padding: 40px;
+  background-image: url("./img/onda.svg");
+  color: #c6c6c6;
+  font-size: 4rem;
+  text-align: right;
+  align-self: center;
+}
+
+.vantagens {
+  padding: 40px;
+  background-color: #ffffff;
+}
+.vantagens li:nth-child(odd) {
+  background: #f7f7f7;
+}
+.vantagens li:hover {
+  border-left: 4px solid #e21;
+}
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-bottom: 0px;
+}
+.vantagens-item img {
+  grid-column: 1;
+  padding: 20px;
+}
+.vantagens-item h3 {
+  grid-column: 2;
+  padding: 20px 0px 20px 0px;
+}
+.vantagens-item p {
+  display: block;
+  grid-column: 2;
+  margin-bottom: 20px;
+}
+
+.rodape {
+  margin-top: 60px;
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
