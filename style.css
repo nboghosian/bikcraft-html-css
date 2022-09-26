@@ -12,6 +12,7 @@ main {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 a {
@@ -106,6 +107,12 @@ ul {
   right: -30px;
 }
 
+.foto-cover img {
+  object-fit: cover;
+  height: 100%;
+  object-position: top left;
+}
+
 .subtitulo {
   padding: 40px;
   background-image: url("./img/onda.svg");
@@ -113,6 +120,7 @@ ul {
   font-size: 4rem;
   text-align: right;
   align-self: center;
+  /*word-break: break-all;*/
 }
 
 .vantagens {
@@ -151,4 +159,51 @@ ul {
   width: 100%;
   text-align: center;
   padding: 20px;
+}
+
+@media (max-width: 1000px) {
+  .conteudo-vantagem {
+    grid-template-columns: 1fr;
+  }
+  .conteudo-vantagem h2 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+  .intro::before {
+    display: none;
+  }
+  main {
+    margin-top: 30px;
+  }
+  .header {
+    gap: 30px;
+  }
+  .intro {
+    text-align: left;
+    justify-items: start;
+  }
+  .intro p {
+    font-size: 1.2rem;
+  }
+  .conteudo-vantagem h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .menu {
+    gap: 15px;
+  }
+  .vantagens-item h3 {
+    font-size: 1.2rem;
+  }
+  .vantagens-item p {
+    font-size: 1.1rem;
+  }
+  .rodape p {
+    font-size: 1.1rem;
+  }
 }
