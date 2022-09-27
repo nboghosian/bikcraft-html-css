@@ -17,5 +17,4 @@ O objetivo do exercício é colocar em prática os estudo de HTML e CSS, incluin
 
   
 
-  **:star: Em desenvolvimento!**
 
